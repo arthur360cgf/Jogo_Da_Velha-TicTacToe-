@@ -9,16 +9,16 @@ public class Main {
 		
 	
 		while(true) {
-			System.out.println("_------------Jogo da velha_------------");
+			System.out.println("------------| Jogo da velha |------------");
 			jogo.Mostrar();
 			
 			
 			do {
-				System.out.print("Jogador 1, Informe uma posição ");
+				System.out.print("Jogador 1, Informe uma posiÃ§Ã£o ");
 				posicao = sc.next();
 				while(!jogo.Valido(posicao)) {
 					System.out.println("Jogada invalida, tente novamente");
-					System.out.print("Jogador 1, Informe uma posição ");
+					System.out.print("Jogador 1, Informe uma posiÃ§Ã£o ");
 					posicao = sc.next();
 					valida = 0;
 				}
@@ -34,11 +34,11 @@ public class Main {
 				break;
 			}
 			do {
-				System.out.print("Jogador 2, Informe uma posição ");
+				System.out.print("Jogador 2, Informe uma posiÃ§Ã£o ");
 				posicao = sc.next();
 				while(!jogo.Valido(posicao)) {
 					System.out.println("Jogada invalida, tente novamente");
-					System.out.print("Jogador 2, Informe uma posição ");
+					System.out.print("Jogador 2, Informe uma posiÃ§Ã£o ");
 					posicao = sc.next();
 					valida = 0;
 				}
