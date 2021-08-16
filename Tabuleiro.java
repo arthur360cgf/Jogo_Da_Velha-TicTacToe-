@@ -52,7 +52,7 @@ public class Tabuleiro {
 		if(jogadas == 9) {
 			vencedor = "EMPATE";
 		}
-		else if(jogadas == 8){
+		
 		G[0] = T[0][0] + T[0][1] + T[0][2];
 		G[1] = T[1][0] + T[1][1] + T[1][2];
 		G[2] = T[2][0] + T[2][1] + T[2][2];
@@ -64,14 +64,13 @@ public class Tabuleiro {
 		G[6] = T[0][0] + T[1][1] + T[2][2];
 		G[7] = T[0][2] + T[1][1] + T[2][0];
 		
-		for(int i = 0; i < T.length; ++i) {
+		for(int i = 0; i < G.length; ++i) {
 			if(G[i].equals("XXX")) {
 				vencedor = "O Jogador 1 Venceu";
 			}
 			else if(G[i].equals("OOO")) {
 				vencedor = "O Jogador 2 Venceu";
 			}
-		}
 		}
 		return vencedor;
 	}
